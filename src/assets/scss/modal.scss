@@ -1,0 +1,111 @@
+@import 'variable.scss';
+
+:deep(.modal-container) {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+:deep(.modal-content) {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	margin: 0 1rem;
+	padding: 1rem;
+	border: 1px solid #fff;
+	border-radius: 1.5rem;
+	background: #fff;
+	width: unset !important;
+	// overflow: auto;
+	max-height: auto;
+}
+
+:deep(.modal-content) .model {
+	height: 100%;
+	overflow: auto;
+}
+
+.modal__title {
+	margin: 0 2rem 0 0;
+	font-size: 1.5rem;
+	font-weight: 700;
+}
+.modal__close {
+	position: absolute;
+	top: 0.5rem;
+	right: 0.5rem;
+}
+
+.close {
+	position: absolute;
+	right: -16px;
+	top: -16px;
+	z-index: 1;
+	opacity: 1;
+	width: 45px;
+	height: 45px;
+	border-radius: 100%;
+	background-color: $coloRed;
+
+	svg {
+		color: #fff;
+	}
+}
+
+:deep(.modal-content) {
+	min-width: 50%;
+	max-height: calc(100vh - 4em);
+
+	.modal__content {
+		padding: 20px;
+		overflow-y: auto;
+
+		.modal-header {
+			border-bottom: transparent;
+		}
+
+		.modal-footer {
+			border-top: transparent;
+		}
+
+	}
+}
+
+@media (max-width: 1800px) {
+	:deep(.modal-content) {
+		min-width: 60%;
+	}
+}
+
+@media (max-width: 1460px) {
+	:deep(.modal-content) {
+		min-width: 70%;
+	}
+}
+
+@media (max-width: 1260px) {
+	:deep(.modal-content) {
+		// min-width: 95%;
+	}
+}
+
+@media (max-width: 992px) {
+	.modal__content {
+		padding: 0px;
+	}
+}
+
+@media (max-width: 576px) {
+	:deep(.modal-content) {
+		max-height: calc(100vh - 4em);
+	}
+
+	.modal__content {
+		overflow-y: auto !important;
+	}
+}
+
+@media (min-width: 576px) {
+	:deep(.modal-content) {
+		max-width: 500px;
+	}
+}

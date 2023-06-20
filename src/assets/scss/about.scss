@@ -1,0 +1,66 @@
+@import 'variable.scss';
+
+.about-us {
+	.about-us-row {
+		background-color: $coloRed;
+		padding: 20px 10px;
+		border-radius: 30px;
+		position: relative;
+		&.about-1 {
+			background-color: #fff;
+			.about-us-left {
+				color: #000;
+			}
+		}
+		.about-us-left {
+			color: #fff;
+			.about-description {
+				margin-top: 40px;
+				p {
+					line-height: 40px;
+					font-size: 18px;
+				}
+			}
+		}
+	}
+}
+
+// --media--
+@media (max-width: 1400px) {
+}
+@media (max-width: 1200px) {
+}
+@media (max-width: 992px) {
+	.about-us {
+		.about-us-row {
+			margin: 0px 5px;
+		}
+	}
+}
+@media (max-width: 768px) {
+	.about-us {
+		.about-us-row {
+			.about-us-left {
+				text-align: center;
+				.about-description {
+					margin-top: 20px;
+					margin-bottom: 20px;
+					text-align: center;
+
+					p {
+						font-size: 16px;
+						line-height: 30px;
+					}
+				}
+			}
+		}
+	}
+}
+@media (max-width: 576px) {
+}
+@media (max-width: 468px) {
+}
+@media (max-width: 375px) {
+}
+@media (max-width: 320px) {
+}

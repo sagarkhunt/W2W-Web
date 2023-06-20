@@ -1,0 +1,115 @@
+@import "variable.scss";
+
+.header{
+    &.aj2-header{
+        background-color: #fff;
+    }
+}
+
+.banner{
+    &.aj2-banner{
+        background-color: $coloRed;
+        color: #fff;
+        .banner-icon{
+            svg{
+                color: #fff;
+            }
+        }
+    }
+}
+
+
+.add-job{
+    &.aj1{
+        background-color: $bg-color;
+    }
+    &.aj2{
+        .row{
+            padding: 0px 15px;
+        }
+    }
+    .add-job-table{
+        .job-table-header{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .jth-left{
+                display: flex;
+                align-items: center;
+                .form-control{
+                    border: transparent;
+                    color: $colorPurple;
+                    margin-left: 10px;
+                    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+                    background-color: #fff;
+                }
+            }
+        }
+    }
+    .aj2-bg{
+        background-color: #fff;
+        padding:30px 20px;
+        border-radius: 30px;
+        box-shadow: 0px 0px 10px rgba(0,0,0,0.05);
+    }
+}
+
+// --media--
+// @media (max-width: 1400px) { }
+@media (max-width: 1200px) { }
+@media (max-width: 992px) { }
+@media (max-width: 768px) { 
+    .add-job{
+        .add-job-table{
+            .job-table-header{
+                display: block;
+                text-align: center;
+                .jth-left{
+                    justify-content: center;
+                    margin-bottom: 20px;
+                }
+                .jth-right{
+                    .entry-dropdown{
+                        justify-content: center;
+                        width: 50%;
+                        margin: 0 auto;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 576px) {
+    .add-job{
+        .add-job-table{
+            .job-table-header{
+                .jth-left{
+                    display: block;
+                    text-align: center;
+                    .form-control{
+                        margin-top: 15px;
+                        margin-left: 0;
+                    }
+                }
+            }
+        }
+    }
+ }
+@media (max-width: 468px) { }
+@media (max-width: 375px) { 
+    .add-job{
+        .add-job-table{
+            .job-table-header{
+                
+                .jth-right{
+                    .entry-dropdown{
+                        justify-content: center;
+                        width: 100%;
+                        margin: 0 auto;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 320px) { }

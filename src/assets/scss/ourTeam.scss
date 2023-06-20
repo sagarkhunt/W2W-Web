@@ -1,0 +1,189 @@
+@import "variable.scss";
+
+.our-team {
+    .our-team-row {
+        background-color: #fff;
+        border-radius: 30px;
+        padding: 30px 10px 30px 10px;
+        position: relative;
+
+        .team-box {
+            position: relative;
+            padding: 130px 25px 25px 25px;
+            border-radius: 20px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05);
+            margin-top: 220px;
+
+            .team-box-img {
+                .img1 {
+                    position: absolute;
+                    top: -10%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+
+                .img2 {
+                    position: absolute;
+                    top: -10%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+
+                    img {
+                        width: 350px;
+                        height: 300px;
+                        object-fit: cover;
+                    }
+                }
+            }
+
+            .team-box-content {
+                .tbc-title {
+                    margin-top: 10px;
+                    margin-bottom: 20px;
+
+                    .text-big {
+                        font-size: 22px;
+                    }
+                }
+
+                .tbc-info {
+                    .tbc-contact {
+                        .contact-list {
+                            li {
+                                display: block;
+                                padding: 10px 0px;
+
+                                a {
+                                    svg {
+                                        font-size: 16px;
+                                        margin-right: 10px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .tbc-social {
+                    .social-list {
+                        li {
+                            padding: 5px 0px;
+                            display: block;
+                            text-align: center;
+
+                            a {
+                                svg {
+                                    color: $coloRed;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// --media--
+@media (max-width: 1400px) {}
+
+@media (max-width: 1200px) {
+    .our-team{
+        .our-team-row{
+            .team-box{
+                .team-box-img{
+                    .img2{
+                        img{
+                            height: 310px;
+                            width: auto;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .our-team{
+        .our-team-row{
+            .team-box{
+                .team-box-img{
+                    .img2{
+                        img{
+                            height: 310px;
+                            min-width: 210px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .our-team{
+        .our-team-row{
+            .team-box{
+                .team-box-content{
+                    .tbc-social{
+                        .social-list{
+                            li{
+                                display: inline-block;
+                                padding: 5px 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .our-team{
+        .our-team-row{
+            .team-box{
+                text-align: center;
+                .team-box-img{
+                    .img2{
+                        img{
+                            height: auto;
+                            width: auto;
+                            object-fit: contain;
+                        }
+                    }
+                }
+                .team-box-content{
+                    .tbc-title{
+                        margin-bottom: 10px;
+                        .text-big{
+                            font-size: 20px;
+                        }
+                        
+                    }
+                    .tbc-info{
+                        .tbc-contact{
+                            .contact-list{
+                                li{
+                                    a{
+                                        font-size: 14px;
+                                        svg{
+                                            font-size: 12px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 468px) {}
+
+@media (max-width: 375px) {}
+
+@media (max-width: 320px) {}

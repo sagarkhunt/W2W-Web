@@ -1,0 +1,17 @@
+export default {
+	documentTypes: [],
+	documents: [],
+	defaultDocuments:[],
+	employerList: [],
+	contracts: [],
+	taxCardList: [],
+	eContracts: [],
+	paySlipList: [],
+	totalPaySlip: 0,
+	yearlyIncome: {},
+	totalDocument: 0,
+	totalContracts: 0,
+	totalEContracts: 0,
+	earnedPercentage: 0,
+	paySleepSeekerDetail: null,
+};

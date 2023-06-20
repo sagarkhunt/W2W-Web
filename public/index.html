@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+		<link rel="icon" href="<%= BASE_URL %>favicon.png" />
+		<title><%= htmlWebpackPlugin.options.title %></title>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+		<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
+		<!--Start of Tawk.to Script-->
+		<script type="text/javascript">
+			var Tawk_API = Tawk_API || {},
+				Tawk_LoadStart = new Date();
+			window.Tawk_API.onBeforeLoad = (function() {
+				var s1 = document.createElement('script'),
+					s0 = document.getElementsByTagName('script')[0];
+				s1.async = true;
+				s1.src = 'https://embed.tawk.to/6215d7b71ffac05b1d7b421f/1g4cc7vn6';
+				s1.charset = 'UTF-8';
+				s1.setAttribute('crossorigin', '*');
+				s0.parentNode.insertBefore(s1, s0);
+			})();
+		</script>
+		<!--End of Tawk.to Script-->
+		<script>
+			// Initialize the agent once at web application startup.
+			// Alternatively initialize as early on the page as possible.
+			const fpPromise = import('https://fpcdn.io/v3/4mRxQDXBpg9EajI1hw7a').then(FingerprintJS => {
+				window.fpPromise = FingerprintJS.load();
+			});
+
+			// // Analyze the visitor when necessary.
+			// fpPromise
+			//   .then(fp => fp.get())
+			//   .then(result => {
+			// 	console.log(result,'result');
+			// 	console.log(result.requestId, result.visitorId)})
+		</script>
+	</head>
+	<body>
+		<noscript>
+			<strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+		</noscript>
+		<!-- vue app -->
+		<div id="app" style="position: relative;"></div>
+		<!-- built files will be auto injected -->
+	</body>
+</html>

@@ -1,0 +1,546 @@
+@import 'variable.scss';
+
+@media (max-width: 1400px) {
+}
+
+// @media (max-width: 1200px) {
+// 	.dashboard-tab {
+// 		.dash-left-tab {
+// 			min-width: 32%;
+// 		}
+
+// 		.dash-nav-responsive {
+// 			min-width: 12%;
+// 		}
+
+// 		.dash-right-tab {
+// 			.dash-pill {
+// 				.dash-profile-data {
+// 					.dash-user-data {
+// 						float: none;
+// 						text-align: center;
+// 						margin-top: 30px;
+
+// 						.dash-user-data-top {
+// 							// justify-content: center;
+// 							margin-bottom: 20px;
+// 						}
+
+// 						.dash-user-data-bottom {
+// 							// justify-content: center;
+// 						}
+// 					}
+// 				}
+// 			}
+
+// 			.payment-pill {
+// 				.payment-table {
+// 					.tbl-status {
+// 						flex-wrap: wrap;
+// 						flex-direction: column-reverse;
+// 						justify-content: center;
+
+// 						span {
+// 							margin-right: 0;
+// 						}
+
+// 						img {
+// 							width: 30px;
+// 							height: 30px;
+// 						}
+// 					}
+// 				}
+// 				&.invoice-pill {
+// 					.invc-table {
+// 						.tbl-botttom-outer {
+// 							margin-bottom: 30px;
+// 							.tbl-bottom {
+// 								top: 0;
+// 								ul {
+// 									display: block;
+// 									li {
+// 										display: block;
+// 										text-align: center;
+// 										padding: 5px 0px;
+// 									}
+// 								}
+// 							}
+// 						}
+// 					}
+// 				}
+// 			}
+// 		}
+// 	}
+// }
+
+// @media (max-width: 992px) {
+// 	.banner {
+// 		&.invoice-banner {
+// 			.banner-back {
+// 				justify-content: center;
+// 				margin-bottom: 15px;
+// 			}
+// 		}
+// 	}
+
+// .dashboard-tab {
+// 	.dash-left-tab {
+// 		min-width: 18%;
+// 		width: 18%;
+// 		transition: $transition;
+
+// 		.nav {
+// 			.nav-link {
+// 				text-align: center;
+// 				transition: $transition;
+
+// 				&::after {
+// 					display: none;
+// 				}
+
+// 				.res-hide {
+// 					display: none;
+// 					white-space: nowrap;
+// 				}
+
+// 				.nav-link-icon {
+// 					margin: 0;
+// 				}
+// 			}
+// 		}
+// 	}
+
+// 	// .dash-nav-responsive {
+// 	// 	min-width: 45%;
+
+// 	// 	.nav {
+// 	// 		.nav-link {
+// 	// 			justify-content: flex-start;
+
+// 	// 			&::after {
+// 	// 				display: block;
+// 	// 			}
+
+// 	// 			.res-hide {
+// 	// 				display: block;
+// 	// 				margin-left: 10px;
+// 	// 			}
+
+// 	// 			.nav-link-icon {
+// 	// 				display: block;
+// 	// 			}
+// 	// 		}
+// 	// 	}
+// 	// }
+
+// 	.dash-right-tab {
+// 		.dash-pill {
+// 			.dash-user-info {
+// 				padding: 20px 15px;
+// 			}
+
+// 			.dash-profile-data {
+// 				margin: 30px 0px;
+// 			}
+
+// 			.dash-table {
+// 				.general-info-setting {
+// 					.dropdown {
+// 						padding: 15px;
+// 						border-radius: 15px;
+// 					}
+// 				}
+// 			}
+// 		}
+// 	}
+// }
+// }
+
+// @media (max-width: 768px) {
+// 	.dashboard-tab {
+// 		.dash-left-tab {
+// 			min-width: 15%;
+// 			width: 15%;
+
+// 			.nav {
+// 				.nav-link {
+// 					padding: 12px 10px;
+
+// 					.nav-link-icon {
+// 						width: 40px;
+// 						height: 40px;
+// 						line-height: 40px;
+
+// 						svg {
+// 							font-size: 15px;
+// 						}
+// 					}
+// 				}
+// 			}
+// 		}
+
+// 		.dash-nav-responsive {
+// 			min-width: 50%;
+// 		}
+// 		.dash-right-tab {
+// 			.payment-pill {
+// 				&.invoice-pill {
+// 					.invc-emp-header-top {
+// 						text-align: center;
+// 					}
+// 					.invc-emp-header-bottom {
+// 						display: block;
+// 						text-align: center;
+
+// 						.header-bottom-btns {
+// 							margin-top: 15px;
+// 						}
+// 					}
+// 					.invoice-data {
+// 						.invc-form {
+// 							form {
+// 								.btns-row {
+// 									.btn-left {
+// 										text-align: center;
+// 									}
+// 									.btn-right {
+// 										text-align: center;
+// 									}
+// 								}
+// 							}
+// 						}
+// 					}
+// 				}
+// 			}
+// 		}
+// 	}
+// }
+
+// @media (max-width: 576px) {
+// 	.banner {
+// 		&.invoice-banner {
+// 			.banner-back {
+// 				.back-icon {
+// 					width: 35px;
+// 					height: 35px;
+// 					line-height: 35px;
+
+// 					span {
+// 						font-size: 20px;
+// 					}
+// 				}
+// 				.back-text {
+// 					span {
+// 						font-size: 14px;
+// 					}
+// 				}
+// 			}
+// 		}
+// 	}
+// 	.dashboard-tab {
+// 		.dash-left-tab {
+// 			width: 15%;
+// 			min-width: 15%;
+// 			padding-left: 0px;
+
+// 			.nav {
+// 				.nav-link {
+// 					font-size: 14px;
+// 				}
+// 			}
+// 		}
+
+// 		.dash-nav-responsive {
+// 			width: 90%;
+// 			min-width: 100%;
+// 		}
+
+// 		.dash-right-tab {
+// 			padding: 15px 2px;
+
+// 			.dash-pill {
+// 				.dash-user-info {
+// 					.dash-user-info-box {
+// 						.user-info-box-left {
+// 							.user-info-left-icon-box {
+// 								width: 40px;
+// 								height: 40px;
+// 								line-height: 42px;
+
+// 								svg {
+// 									font-size: 15px;
+// 								}
+// 							}
+// 						}
+
+// 						.user-info-box-right {
+// 							p {
+// 								font-size: 14px;
+// 								margin: 0;
+// 							}
+
+// 							a {
+// 								font-size: 12px;
+// 							}
+// 						}
+// 					}
+// 				}
+
+// 				.dash-profile-data {
+// 					.dash-user-profile {
+// 						.dash-user-profile-img {
+// 							width: 80px;
+// 							height: 80px;
+// 							margin-right: 20px;
+
+// 							img {
+// 								width: 80px;
+// 								height: 80px;
+// 								border-radius: 50%;
+// 							}
+// 						}
+// 					}
+// 				}
+
+// 				.dash-table {
+// 					.general-info-setting {
+// 						.dropdown {
+// 							.dropdown-toggle {
+// 								font-size: 14px;
+// 							}
+// 						}
+// 					}
+// 				}
+// 			}
+
+// 			.account-pill {
+// 				padding: 20px 15px;
+
+// 				form {
+// 					.form-group {
+// 						label {
+// 							font-size: 12px;
+// 						}
+
+// 						.form-control {
+// 							padding: 10px 15px;
+// 							font-size: 14px;
+// 						}
+
+// 						.btn-lightred {
+// 							padding: 13px 15px;
+// 							font-size: 10px;
+// 						}
+// 					}
+// 				}
+// 			}
+
+// 			.payment-pill {
+// 				padding: 15px 0px;
+// 				.payment-pill-header {
+// 					display: block;
+// 					text-align: center;
+
+// 					.pph-right {
+// 						margin-top: 10px;
+// 					}
+// 				}
+
+// 				.payment-entry-row {
+// 					display: block;
+// 					text-align: center;
+
+// 					.per-left {
+// 						margin-bottom: 10px;
+// 						justify-content: center;
+
+// 						span {
+// 							font-size: 14px;
+// 						}
+// 					}
+
+// 					.per-right {
+// 						.form-control {
+// 							padding: 10px 15px;
+// 							font-size: 14px;
+// 						}
+// 					}
+// 				}
+
+// 				.payment-pagination {
+// 					nav {
+// 						.pagination {
+// 							display: block;
+// 							text-align: center;
+
+// 							.page-item {
+// 								.page-link {
+// 									font-size: 14px;
+// 								}
+// 							}
+
+// 							.pg-inner-row {
+// 								.pg-inner {
+// 									ul {
+// 										display: inline-flex;
+// 									}
+// 								}
+// 							}
+// 						}
+// 					}
+// 				}
+
+// 				&.invoice-pill {
+// 					.invc-table {
+// 						.tbl-botttom-outer {
+// 							.tbl-bottom {
+// 								ul {
+// 									li {
+// 										font-size: 14px;
+// 									}
+// 								}
+// 							}
+// 						}
+// 					}
+// 					.invoice-data {
+// 						.invc-form {
+// 							form {
+// 								.form-group {
+// 									.dropdown {
+// 										padding: 10px 15px;
+// 										.dropdown-toggle {
+// 											font-size: 14px;
+// 										}
+// 									}
+// 								}
+// 							}
+// 						}
+// 					}
+// 				}
+// 			}
+
+// 			.document-pill {
+// 				.my-document {
+// 					.md-header {
+// 						display: block;
+// 						text-align: center;
+// 						.md-header-left {
+// 							.header-title {
+// 								margin-bottom: 15px;
+// 								font-size: 20px;
+// 							}
+// 						}
+// 					}
+// 				}
+// 			}
+// 			.resume-pill {
+// 				.resume-form {
+// 					.btn-row {
+// 						justify-content: center !important;
+// 					}
+// 				}
+// 			}
+// 		}
+// 	}
+// }
+
+// @media (max-width: 468px) {
+// 	.dashboard-tab {
+// 		.dash-left-tab {
+// 			min-width: 25%;
+// 		}
+
+// 		.dash-nav-responsive {
+// 			min-width: 60%;
+// 		}
+
+// 		.dash-right-tab {
+// 			.dash-pill {
+// 				.dash-user-info {
+// 					.dash-user-info-box {
+// 						display: block;
+// 						text-align: center;
+
+// 						.user-info-box-left {
+// 							.user-info-left-icon-box {
+// 								margin: 0 auto;
+// 							}
+// 						}
+// 					}
+// 				}
+
+// 				.dash-profile-data {
+// 					.dash-user-profile {
+// 						display: block;
+// 						text-align: center;
+
+// 						.dash-user-profile-img {
+// 							margin: 0 auto;
+// 							margin-bottom: 10px;
+// 						}
+
+// 						.dash-user-profile-info {
+// 							.profile-info-box {
+// 								justify-content: center;
+// 							}
+
+// 							.info-box-icon {
+// 								width: 35px;
+// 								height: 35px;
+// 								line-height: 35px;
+
+// 								svg {
+// 									font-size: 15px;
+// 								}
+// 							}
+// 						}
+// 					}
+
+// 					.dash-user-data-top {
+// 						justify-content: center;
+// 					}
+
+// 					.dash-user-data-bottom {
+// 						justify-content: center;
+// 					}
+// 				}
+
+// 				.dash-table {
+// 					.title-lg {
+// 						text-align: center;
+// 					}
+// 				}
+// 			}
+// 		}
+// 	}
+// }
+
+// @media (max-width: 375px) {
+// 	.dashboard-tab {
+// 		.dash-left-tab {
+// 			min-width: 28%;
+// 		}
+
+// 		.dash-nav-responsive {
+// 			min-width: 80%;
+// 		}
+// 	}
+// }
+
+// @media (max-width: 320px) {
+// 	.dashboard-tab {
+// 		.dash-right-tab {
+// 			.payment-pill {
+// 				&.invoive-pill {
+// 					.invc-emp-header-bottom {
+// 						.header-bottom-btns {
+// 							.btn-darkGray {
+// 								margin-bottom: 10px;
+// 							}
+// 						}
+// 					}
+// 				}
+// 			}
+// 		}
+// 	}
+// }
